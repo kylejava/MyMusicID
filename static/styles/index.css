@@ -1,0 +1,158 @@
+body{
+  background-color: #558b7b;
+}
+
+@font-face {
+  font-family: GothamMedium;
+  src: url('../fonts/Gotham-Font/Gotham-Black.otf');
+}
+h1{
+  font-family: GothamMedium;
+  color: #ffffff;
+
+}
+h2{
+  font-family: GothamMedium;
+  color: #ffffff;
+}
+h3{
+  font-family: GothamMedium;
+  color: #ffffff;
+}
+h4{
+  font-family: GothamMedium;
+  color: #ffffff;
+}
+h5{
+  font-family: GothamMedium;
+  color: #ffffff;
+}
+a:link{
+  font-family: GothamMedium;
+  color: #1DB594;
+}
+p{
+  font-family: GothamMedium;
+  color: #ffffff;
+}
+li{
+  font-family: GothamMedium;
+  color: #a7a7a7;
+
+}
+
+span{
+  font-family: GothamMedium;
+  color: #fcfcfc;
+}
+
+.id-card p{
+  color: #fcfcfc;
+  max-width: 100%;
+}
+
+.sample-id-card p{
+  color: #fcfcfc;
+}
+
+ .id-card{
+  /*display:flex;
+  align-items:
+  ;
+  flex-flow: wrap;
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px;
+  width: 500px;
+  min-width: 50%;
+  min-height: 320px;
+  overflow: inherit;
+*/
+  position: static;
+ /* center the element */
+ right: 0;
+ left: 0;
+ margin-right: auto;
+ margin-left: auto;
+ /* give it dimensions */
+ min-height: 10em;
+ width: 500px;
+ border-radius: 25px;
+ background: #232323;
+ padding: 20px;
+ min-width: 60%;
+ min-height: 320px;
+ overflow: inherit;
+ border-color: black;
+ border-style: solid;
+}
+
+.sample-id-card{
+   /*display:flex;
+   align-items:
+   ;
+   flex-flow: wrap;
+   border-radius: 25px;
+   background: #73AD21;
+   padding: 20px;
+   width: 500px;
+   min-width: 50%;
+   min-height: 320px;
+   overflow: inherit;
+ */
+   position: static;
+  /* center the element */
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  /* give it dimensions */
+  min-height: 10em;
+  width: 500px;
+  border-radius: 25px;
+  background: #232323;
+  padding: 20px;
+  min-width: 50%;
+  min-height: 320px;
+  overflow: inherit;
+  border-color: black;
+  border-style: solid;
+}
+
+.photo-box {
+  width: 200px;
+
+
+  height: auto;
+  border-radius: 25px;
+}
+
+.play-button{
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+
+}
+
+.spotifynum{
+  font-weight: bold;
+}
+
+.right-box{
+  word-wrap: break-word
+}
+
+#title{
+  font-size: 50px;
+}
+
+button{
+  font-family: GothamMedium;
+  color: #ffffff;
+}
+
+.icon{
+  max-width: 15px;
+  max-height: 15px;
+}

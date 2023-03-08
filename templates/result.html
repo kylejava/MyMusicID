@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test Result</title>
+    <link rel="stylesheet"href="{{ url_for('static', filename='styles/index.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body  style="background-color:#006351;">
+    <div class="container-xl fluid pt-5">
+
+
+
+
+      <div class="id-card pt-5">
+        <div class="container-sm">
+          <div class="row">
+            <div class="col-5 mx-2">
+              <img  class = "img-fluid photo-box" src={{data.profile_picture}} alt="profile photo">
+              <p>Username: {{data.username}}</p>
+              <p>{{data.user_followers}} Followers</p>
+            </div>
+            <div class="col right-box mr-2">
+              <p class="spotifynum">ID #: {{data.user_id}}</p>
+              <p>Your Top Three Songs</p>
+              <ol>
+                <li>{{data.top_user_songs[0]}}</li>
+
+                <li>{{data.top_user_songs[1]}}</li>
+                <li>{{data.top_user_songs[2]}}</li>
+              </ol>
+              <p>Your Top Three Artists</p>
+              <ol>
+                <li>{{data.top_user_artists[0]}}</li>
+                <li>{{data.top_user_artists[1]}}</li>
+                <li>{{data.top_user_artists[2]}}</li>
+              </ol>
+              <a href={{data.user_link}}>Follow Me On Spotify Here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+ <html>
+     <head>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+         <script>
+             function generatePDF() {
+                 var pdf = new jsPDF({
+                     orientation: 'p',
+                     unit: 'mm',
+                     format: 'a5',
+                     putOnlyUsedFonts:true
+                     });
+                 pdf.text("Generate a PDF with JavaScript", 20, 20);
+                 pdf.text("published on APITemplate.io", 20, 30);
+                 pdf.addPage();
+                 pdf.text(20, 20, 'The second page');
+                 pdf.save('jsPDF_2Pages.pdf');
+                 pdf.output('dataurlnewwindow')
+                 window.reload()
+                 return false
+             }
+         </script>
+     </head>
+     <body>
+         <button onclick="generatePDF()">Generate PDF using jsPDF</button>
+     </body>
+ </html>
+-->

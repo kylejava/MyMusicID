@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MySpotifyID</title>
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='styles/index.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a8e5d1c419.js" crossorigin="anonymous"></script>
+    <link
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+  rel="stylesheet"  type='text/css'>
+  </head>
+  <body style="background-color:#006351;">
+    <div class="container-fluid">
+      <div class="container text-center">
+        <p id = "title">MySpotifyID</p>
+        <div class="container-fluid">
+          <p id="title">Generate your own Spotify card Here!</p>
+
+        </div>
+        <div class="container-fluid py-4">
+          <div class="login-button">
+            <form class="form" action="/" method="post">
+              <button class="btn btn-dark" type="submit" name="button"><h3>Create My Own!</h3></button>
+            </form>
+          </div>
+        </div>
+        <div class="container-xl">
+      </div>
+      </div>
+
+
+    <div class="justify-content-center">
+
+      <div class="sample-id-card ">
+        <div class="container-sm">
+          <div class="row">
+            <div class="col-6">
+              <img  class = "photo-box" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/2048px-Spotify_App_Logo.svg.png" alt="profile photo">
+              <p class = "pt-3">Username: Your Username Here</p>
+              <p>10 Followers</p>
+            </div>
+            <div class="col right-box">
+              <p class="spotifynum">ID #: 12345678</p>
+              <span> Your Top Three Songs  </span>
+              <img src="../static/icons/music-solid.svg" class ="icon" alt="">
+              <ol>
+                <li>Song #1</li>
+                <li>Song #2</li>
+                <li>Song #3</li>
+              </ol>
+              <span>Your Top Three Artists</span>
+              <ol>
+                <li>Artist #1</li>
+                <li>Artist #2</li>
+                <li>Artist #3</li>
+              </ol>
+              <a href="#">Follow Me On Spotify Here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  </body>
+</html>
